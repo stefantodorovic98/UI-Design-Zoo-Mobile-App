@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray">
+
+    <include layout="@layout/back_toolbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_margin="30dp"
+            android:fontFamily="@font/kalam_regular"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="Promena podataka">
+        </TextView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TableRow android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/kalam_regular"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="20dp"
+                    android:textAlignment="textEnd"
+                    android:text="Ime:">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:layout_weight="4"
+                    android:background="@color/green"></EditText>
+            </TableRow>
+            <TableRow android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/kalam_regular"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="20dp"
+                    android:textAlignment="textEnd"
+                    android:text="Prezime:">
+                </TextView>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:background="@color/green"
+                    android:id="@+id/lastname">
+                </EditText>
+            </TableRow>
+            <TableRow android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/kalam_regular"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="20dp"
+                    android:textAlignment="textEnd"
+                    android:text="Telefon:">
+                </TextView>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:background="@color/green"
+                    android:id="@+id/phone">
+                </EditText>
+            </TableRow>
+            <TableRow android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/kalam_regular"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="20dp"
+                    android:textAlignment="textEnd"
+                    android:text="Adresa:">
+                </TextView>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:background="@color/green"
+                    android:id="@+id/address">
+                </EditText>
+            </TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="50dp"
+                android:backgroundTint="@color/green"
+                android:onClick="changeData"
+                android:text="Sačuvaj izmene"
+                android:textColor="@color/black">
+            </Button>
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

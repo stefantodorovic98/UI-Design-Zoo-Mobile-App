@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray">
+
+    <include layout="@layout/back_toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="171dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tigar"
+                android:id="@+id/event_image">
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/kalam_bold"
+                android:text="Tigrovi dani"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:id="@+id/event_name">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/kalam_regular"
+                android:text="Od 24.04. do 29.04. dođite i povedite svoje
+                              najmilije! Za najmlađe će biti organizovane radionice!"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="20dp"
+                android:id="@+id/event_description">
+            </TextView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_thumb_up"
+                    android:layout_toLeftOf="@id/likes"
+                    android:onClick="onClickLike">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kalam_regular"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="30dp"
+                    android:text="48"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/likes">
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_arrow_back_ios"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:onClick="onClickLeft">
+        </ImageView>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_arrow_forward_ios"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClickRight">
+        </ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

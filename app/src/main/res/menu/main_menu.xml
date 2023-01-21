@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pregled_desavanja"
+        android:title="Pregled dešavanja">
+    </item>
+
+    <item
+        android:id="@+id/pregled_zivotinja"
+        android:title="Pregled životinja">
+    </item>
+
+    <item
+        android:id="@+id/obavestenja"
+        android:title="Obaveštenja">
+    </item>
+
+    <item
+        android:id="@+id/kontakt_informacije"
+        android:title="Kontakt informacije">
+    </item>
+
+    <item
+        android:id="@+id/promena_podataka"
+        android:title="Promena podataka">
+    </item>
+
+    <item
+        android:id="@+id/promena_lozinke"
+        android:title="Promena lozinke">
+    </item>
+
+    <item
+        android:id="@+id/odjava"
+        android:icon="@drawable/ic_logout"
+        android:title="Odjava">
+    </item>
+
+</menu>

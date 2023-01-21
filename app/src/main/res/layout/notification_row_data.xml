@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@color/dark_gray">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/kalam_regular"
+            android:text="Zaposleni je ODOBRIO grupnu ulaznicu"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:id="@+id/firstLine">
+        </TextView>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kalam_regular"
+                    android:layout_weight="2"
+                    android:textAlignment="textEnd"
+                    android:text="Default date"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:id="@+id/secondLine">
+                </TextView>
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_delete"
+                    android:onClick="deleteNotification">
+                </ImageView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>

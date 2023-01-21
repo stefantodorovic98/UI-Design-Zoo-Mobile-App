@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray">
+
+    <include layout="@layout/menu_toolbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="171dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bronze_paket"
+                android:id="@+id/packet_image">
+            </ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/kalam_bold"
+                android:text="Bronze paket"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:id="@+id/packet_name">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/kalam_regular"
+                android:text="Boravak 2h u zoološkom vrtu uz pratnju vodiča! Sok gratis!"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="20dp"
+                android:id="@+id/packet_description">
+            </TextView>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center">
+                <TableRow android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/kalam_regular"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="Kupi ulaznicu">
+                    </TextView>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_shopping_bag"
+                        android:onClick="onSingleTicketBuy">
+                    </ImageView>
+                </TableRow>
+                <TableRow android:layout_margin="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/kalam_regular"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="Kupi grupnu ulaznicu">
+                    </TextView>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_shopping_cart"
+                        android:onClick="onGroupTicketBuy">
+                    </ImageView>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_arrow_back_ios"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:onClick="onClickLeft">
+        </ImageView>
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_arrow_forward_ios"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClickRight">
+        </ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

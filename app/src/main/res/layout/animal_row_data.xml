@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/kalam_regular"
+            android:text="Tigar"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:id="@+id/animal_name">
+        </TextView>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="132dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/vuk"
+            android:id="@+id/animal_image">
+        </ImageView>
+
+    </LinearLayout>
+</LinearLayout>
